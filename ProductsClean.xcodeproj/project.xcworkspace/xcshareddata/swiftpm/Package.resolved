@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "datalayer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wbbernardes/datalayer.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "db2436c18f4ef20dcc128254490c74bbbcc52828"
+      }
+    },
+    {
+      "identity" : "domain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wbbernardes/domain.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6f947d31ee81ae36df699e30910c4bb4a55032d6"
+      }
+    }
+  ],
+  "version" : 2
+}
