@@ -27,7 +27,7 @@ class ProductsViewModelTests: XCTestCase {
         super.tearDown()
     }
     
-    func testFetchProductsSuccess() async {
+    func testFetchProductsSuccess() async throws {
         // Given
         let expectedProducts = [Product(id: 1, title: "Test Product", price: 10.0, description: "This is a test product", image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", category: "test")]
         fetchProductsUseCaseMock.result = .success(expectedProducts)
@@ -35,18 +35,24 @@ class ProductsViewModelTests: XCTestCase {
         // When
         await viewModel.fetchProducts()
         
+        // Wait for a brief moment to let the fetch operation finish
+        try await Task.sleep(nanoseconds: 1_000_000_000)
+        
         // Then
         XCTAssertEqual(viewModel.products, expectedProducts)
         XCTAssertNil(viewModel.error)
     }
     
-    func testFetchProductsFailure() async {
+    func testFetchProductsFailure() async throws {
         // Given
         let expectedError = APIError.serverError
         fetchProductsUseCaseMock.result = .failure(expectedError)
         
         // When
         await viewModel.fetchProducts()
+        
+        // Wait for a brief moment to let the fetch operation finish
+        try await Task.sleep(nanoseconds: 1_000_000_000)
         
         // Then
         XCTAssertTrue(viewModel.products.isEmpty)
