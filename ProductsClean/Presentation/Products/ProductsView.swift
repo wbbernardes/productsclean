@@ -10,8 +10,8 @@ import SwiftUI
 struct ProductsView: View {
     @StateObject var viewModel: ProductsViewModel
 
-    init(factory: ProductsFactory) {
-        _viewModel = StateObject(wrappedValue: factory.makeProductsViewModel())
+    init(viewModel: ProductsViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
