@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "C9FD7C74-ED11-4F26-B2DE-C9C9DA915468",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ProductsClean.xcodeproj",
+        "identifier" : "B12CC6252A19ADA500FBD153",
+        "name" : "ProductsCleanTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Domain",
+        "identifier" : "DomainTests",
+        "name" : "DomainTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Datalayer",
+        "identifier" : "DataLayerTests",
+        "name" : "DataLayerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
