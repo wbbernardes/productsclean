@@ -11,7 +11,7 @@ import SwiftUI
 struct ProductsCleanApp: App {
     var body: some Scene {
         WindowGroup {
-            ProductsView(factory: ProductsFactory())
+            ProductsView(factory: ProductsFactory().makeProductsViewModel())
         }
     }
 }

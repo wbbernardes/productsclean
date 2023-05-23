@@ -15,13 +15,9 @@ struct ProductsFactory {
     let productRepository: ProductRepositoryProtocol
     
     init() {
-        let apiFactory = APIFactory()
-        let productRepositoryFactory = ProductRepositoryFactory()
-        let fetchProductsUseCaseFactory = FetchProductsUseCaseFactory()
-        
-        apiService = apiFactory.makeAPIService()
-        productRepository = productRepositoryFactory.makeProductRepository(apiService: apiService)
-        fetchProductsUseCase = fetchProductsUseCaseFactory.makeProductsUseCase(productRepository: productRepository)
+        apiService = APIFactory.makeAPIService()
+        productRepository = ProductRepositoryFactory.makeProductRepository(apiService: apiService)
+        fetchProductsUseCase = FetchProductsUseCaseFactory.makeProductsUseCase(productRepository: productRepository)
     }
 
     func makeProductsViewModel() -> ProductsViewModel {
