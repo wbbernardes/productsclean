@@ -13,7 +13,6 @@
 		B12CC6212A19ADA500FBD153 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12CC6202A19ADA500FBD153 /* Preview Assets.xcassets */; };
 		B12CC6352A19ADA500FBD153 /* ProductsCleanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12CC6342A19ADA500FBD153 /* ProductsCleanUITests.swift */; };
 		B12CC6372A19ADA500FBD153 /* ProductsCleanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12CC6362A19ADA500FBD153 /* ProductsCleanUITestsLaunchTests.swift */; };
-		B13913BF2A1C034D0030D4C6 /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = B13913BE2A1C034D0030D4C6 /* DataLayer */; };
 		B1FC01F92A1AEC1900893C4B /* ProductsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC01F82A1AEC1900893C4B /* ProductsFactory.swift */; };
 		B1FC01FD2A1AECD000893C4B /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC01FC2A1AECD000893C4B /* ProductsViewModel.swift */; };
 		B1FC01FF2A1AF4C700893C4B /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC01FE2A1AF4C700893C4B /* ProductsView.swift */; };
@@ -60,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13913BF2A1C034D0030D4C6 /* DataLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +196,6 @@
 			);
 			name = ProductsClean;
 			packageProductDependencies = (
-				B13913BE2A1C034D0030D4C6 /* DataLayer */,
 			);
 			productName = ProductsClean;
 			productReference = B12CC6162A19ADA300FBD153 /* ProductsClean.app */;
@@ -273,7 +270,6 @@
 			);
 			mainGroup = B12CC60D2A19ADA300FBD153;
 			packageReferences = (
-				B13913BD2A1C034D0030D4C6 /* XCRemoteSwiftPackageReference "datalayer" */,
 			);
 			productRefGroup = B12CC6172A19ADA300FBD153 /* Products */;
 			projectDirPath = "";
@@ -641,25 +637,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B13913BD2A1C034D0030D4C6 /* XCRemoteSwiftPackageReference "datalayer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wbbernardes/datalayer.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B13913BE2A1C034D0030D4C6 /* DataLayer */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B13913BD2A1C034D0030D4C6 /* XCRemoteSwiftPackageReference "datalayer" */;
-			productName = DataLayer;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B12CC60E2A19ADA300FBD153 /* Project object */;
 }
