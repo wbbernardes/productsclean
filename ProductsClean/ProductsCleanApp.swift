@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Factory
 
 @main
 struct ProductsCleanApp: App {
     var body: some Scene {
         WindowGroup {
-            ProductsView(factory: ProductsFactory().makeProductsViewModel())
+            ProductsView(viewModel: Container.shared.productsViewModel())
         }
     }
 }
