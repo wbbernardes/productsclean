@@ -9,8 +9,6 @@ import Foundation
 import Combine
 import Domain
 
-@available(iOS 15.0, *)
-@available(macOS 10.15, *)
 struct ProductRepository: ProductRepositoryProtocol {
     private let apiService: APIServiceProtocol
 
@@ -24,8 +22,6 @@ struct ProductRepository: ProductRepositoryProtocol {
     }
 }
 
-@available(iOS 15.0, *)
-@available(macOS 10.15, *)
 public struct ProductRepositoryFactory {
     public static func makeProductRepository(apiService: APIServiceProtocol) -> ProductRepositoryProtocol {
         return ProductRepository(apiService: apiService)

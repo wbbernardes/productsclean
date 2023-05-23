@@ -9,8 +9,6 @@ import XCTest
 import Combine
 @testable import Domain
 
-@available(iOS 15.0, *)
-@available(macOS 10.15, *)
 class FetchProductsUseCaseTests: XCTestCase {
     
     public enum APIError: Error {

@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "34AF3446-02CC-415F-AF1C-183668EF9B87",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "DataLayerTests",
+        "name" : "DataLayerTests"
+      }
+    }
+  ],
+  "version" : 1
+}

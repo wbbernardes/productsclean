@@ -15,15 +15,11 @@ public struct APIFactory {
 }
 
 public protocol NetworkSession {
-    @available(iOS 15.0, *)
-    @available(macOS 10.15, *)
     func customDataTaskPublisher(for request: URLRequest) async throws -> (Data, URLResponse)
 }
 
 // Extend URLSession to conform to NetworkSession
 extension URLSession: NetworkSession {
-    @available(iOS 15.0, *)
-    @available(macOS 10.15, *)
     public func customDataTaskPublisher(for request: URLRequest) async throws -> (Data, URLResponse) {
         let (data, response) = try await self.data(for: request)
         return (data, response)
@@ -31,8 +27,6 @@ extension URLSession: NetworkSession {
 }
 
 public protocol APIServiceProtocol {
-    @available(iOS 15.0, *)
-    @available(macOS 10.15, *)
     func request<T: Decodable>(_ target: APITarget) async throws -> T
 }
 
@@ -43,8 +37,6 @@ class APIService: APIServiceProtocol {
         self.session = session
     }
     
-    @available(iOS 15.0, *)
-    @available(macOS 10.15, *)
     public func request<T: Decodable>(_ target: APITarget) async throws -> T {
         var request = URLRequest(url: target.url)
         request.httpMethod = target.method
