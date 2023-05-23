@@ -47,6 +47,8 @@
 		B12CC6302A19ADA500FBD153 /* ProductsCleanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsCleanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12CC6342A19ADA500FBD153 /* ProductsCleanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCleanUITests.swift; sourceTree = "<group>"; };
 		B12CC6362A19ADA500FBD153 /* ProductsCleanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCleanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B13492082A1D1390001A90D7 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		B13492092A1D139A001A90D7 /* Datalayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Datalayer; sourceTree = "<group>"; };
 		B1FC01F82A1AEC1900893C4B /* ProductsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsFactory.swift; sourceTree = "<group>"; };
 		B1FC01FC2A1AECD000893C4B /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		B1FC01FE2A1AF4C700893C4B /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		B12CC60D2A19ADA300FBD153 = {
 			isa = PBXGroup;
 			children = (
+				B13492072A1D1390001A90D7 /* Packages */,
 				B12CC6182A19ADA300FBD153 /* ProductsClean */,
 				B12CC6292A19ADA500FBD153 /* ProductsCleanTests */,
 				B12CC6332A19ADA500FBD153 /* ProductsCleanUITests */,
@@ -135,6 +138,15 @@
 				B12CC6362A19ADA500FBD153 /* ProductsCleanUITestsLaunchTests.swift */,
 			);
 			path = ProductsCleanUITests;
+			sourceTree = "<group>";
+		};
+		B13492072A1D1390001A90D7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B13492082A1D1390001A90D7 /* Domain */,
+				B13492092A1D139A001A90D7 /* Datalayer */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		B1FC01F72A1AEBE200893C4B /* Application */ = {
