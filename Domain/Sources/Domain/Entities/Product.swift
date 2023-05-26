@@ -23,4 +23,6 @@ public struct Product: Equatable, Hashable, Identifiable {
         self.image = image
         self.category = category
     }
+    
+    public static let empty = Product(id: 0, title: "", price: 0, description: "", image: "", category: "")
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductsView: View {
+    @EnvironmentObject private var envApp: EnvApp
     @StateObject var viewModel: ProductsViewModel
 
     init(viewModel: ProductsViewModel) {
@@ -15,26 +16,39 @@ struct ProductsView: View {
     }
     
     var body: some View {
-        VStack {
-            if let error = viewModel.error {
-                Text(error.localizedDescription)
-            } else {
-                List(viewModel.products, id: \.self) { product in
-                    VStack(alignment: .leading) {
-                        Text(product.title)
-                            .font(.headline)
-                        Text(product.description)
-                            .font(.subheadline)
-                        Text("Price: \(product.price)")
-                            .font(.caption)
+        NavigationView {
+                List {
+                    ForEach(viewModel.products) { product in
+                        VStack(alignment: .leading) {
+                            Text(product.title)
+                                .font(.headline)
+                            Text(product.description)
+                                .font(.subheadline)
+                            Text("Price: \(product.price)")
+                                .font(.caption)
+                        }
+                        .onTapGesture {
+                            viewModel.selectedProduct = product
+                            envApp.productRouter = true
+                        }
                     }
                 }
-            }
+                .onAppear {
+                    Task {
+                        await viewModel.fetchProducts()
+                    }
+                }
+                .navigationTitle("Products")
+                .background(navigationLinks)
         }
-        .onAppear {
-            Task {
-                await viewModel.fetchProducts()
-            }
+    }
+    
+    var navigationLinks: some View {
+        VStack(spacing: 0) {
+            NavigationLink(
+                destination: ProductDetailView(product: viewModel.selectedProduct),
+                isActive: $envApp.productRouter
+            ) { EmptyView() }
         }
     }
 }

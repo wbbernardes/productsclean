@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "544C1F2A-6A7A-4479-84B6-DF901BE82141"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AB83A2F-A149-48AB-A38A-E5636FC4CB7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Presentation/Products/ProductsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Presentation/Products/ProductsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "navigationLinks"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - c11a1a0a6b926b3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.AnotherView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - f5ffd340dd503b62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.AnotherView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - e6fcac3cd064d5cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.ProductDetailView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - fe039768dd0c1d8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.ProductDetailView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

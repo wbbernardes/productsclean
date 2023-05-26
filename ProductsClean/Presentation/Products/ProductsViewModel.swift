@@ -10,6 +10,7 @@ import Domain
 
 class ProductsViewModel: ObservableObject {
     @Published var products: [Product] = []
+    @Published var selectedProduct: Product = .empty
     @Published var error: Error?
     
     private let fetchProductsUseCase: FetchProductsUseCaseProtocol
