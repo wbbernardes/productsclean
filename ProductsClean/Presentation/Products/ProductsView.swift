@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ProductsView: View {
-    @EnvironmentObject private var envApp: EnvApp
     @StateObject var viewModel: ProductsViewModel
-
+    @EnvironmentObject var coordinator: Coordinator<MapRouter>
+    
     init(viewModel: ProductsViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
                 List {
                     ForEach(viewModel.products) { product in
                         VStack(alignment: .leading) {
@@ -29,7 +29,7 @@ struct ProductsView: View {
                         }
                         .onTapGesture {
                             viewModel.selectedProduct = product
-                            envApp.productRouter = true
+                            coordinator.show(.productDetail(product: product))
                         }
                     }
                 }
@@ -38,17 +38,6 @@ struct ProductsView: View {
                         await viewModel.fetchProducts()
                     }
                 }
-                .navigationTitle("Products")
-                .background(navigationLinks)
-        }
-    }
-    
-    var navigationLinks: some View {
-        VStack(spacing: 0) {
-            NavigationLink(
-                destination: ProductDetailView(product: viewModel.selectedProduct),
-                isActive: $envApp.productRouter
-            ) { EmptyView() }
-        }
+//        }
     }
 }

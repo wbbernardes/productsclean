@@ -8,10 +8,9 @@
 import SwiftUI
 import Domain
 
-
-
 struct ProductDetailView: View {
     @StateObject private var envDetail: EnvDetail = EnvDetail()
+    @EnvironmentObject var coordinator: Coordinator<MapRouter>
     let product: Product
     
     var body: some View {
@@ -21,9 +20,14 @@ struct ProductDetailView: View {
                     .font(.title)
                 Text(product.description)
                     .font(.body)
-            }
-            .onTapGesture {
-                envDetail.productDetailRouter = true
+                
+                Button {
+                    envDetail.productDetailRouter = true
+//                    coordinator.show(.another(product: product))
+                } label: {
+                    Text("Test")
+                }
+
             }
             .onAppear {
                 print("onAppear ProductDetailView")
@@ -38,14 +42,8 @@ struct ProductDetailView: View {
     var navigationLinks: some View {
         VStack(spacing: 0) {
             NavigationLink(
-                destination: AnotherView(product: product),
+                destination: AnotherView(product: product).environmentObject(coordinator),
                 isActive: $envDetail.productDetailRouter
-//                    Binding<Bool>(
-//                    get: { envDetail.productDetailRouter == .anotherDetail },
-//                    set: { _ in
-//                        envDetail.productDetailRouter = .none
-//                    }
-//                )
             ) { EmptyView() }
         }
     }

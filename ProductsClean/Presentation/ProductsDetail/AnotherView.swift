@@ -10,6 +10,7 @@ import Domain
 
 struct AnotherView: View {
     @EnvironmentObject private var envApp: EnvApp
+    @EnvironmentObject var coordinator: Coordinator<MapRouter>
     let product: Product
     
     var body: some View {
@@ -18,9 +19,24 @@ struct AnotherView: View {
                 .font(.title)
             Text(product.description)
                 .font(.body)
-                .onTapGesture {
-                    envApp.productRouter = false
-                }
+            
+            Button {
+                coordinator.pop()
+            } label: {
+                Text("back")
+            }
+            
+            Button {
+                coordinator.popToRoot()
+            } label: {
+                Text("poop to root")
+            }
+            
+            Button {
+                coordinator.dismiss()
+            } label: {
+                Text("dismiss")
+            }
         }
         .onAppear {
             print("onAppear AnotherView")

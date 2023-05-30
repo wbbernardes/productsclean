@@ -23,77 +23,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570"
+            uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductsClean/Presentation/Products/ProductsView.swift"
+            filePath = "ProductsClean/ProductsCleanApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "navigationLinks"
-            landmarkType = "24">
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "view()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - c11a1a0a6b926b3a"
+                  uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E - 2b0e39ccdb0667c6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.AnotherView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  symbolName = "ProductsClean.MapRouter.view() -&gt; some"
                   moduleName = "ProductsClean"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/ProductsCleanApp.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "224">
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "688">
                </Location>
                <Location
-                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - f5ffd340dd503b62"
+                  uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E - 2b0e39ccdb0667c6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.AnotherView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
+                  symbolName = "ProductsClean.MapRouter.view() -&gt; some"
                   moduleName = "ProductsClean"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/ProductsCleanApp.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - e6fcac3cd064d5cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.ProductDetailView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "224">
-               </Location>
-               <Location
-                  uuid = "9242A6B1-3A0C-433D-A7AF-81B795DDE570 - fe039768dd0c1d8f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, ProductsClean.ProductDetailView&gt; in ProductsClean.ProductsView.navigationLinks.getter : some"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Presentation/Products/ProductsView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "156">
                </Location>
             </Locations>
          </BreakpointContent>
