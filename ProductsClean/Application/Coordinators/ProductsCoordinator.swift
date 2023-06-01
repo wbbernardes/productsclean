@@ -10,7 +10,7 @@ import SwiftUI
 import Domain
 
 class ProductsCoordinator: NSObject, Coordinator {
-    weak var parentCoordinator: MainCoordinator?
+    weak var parentCoordinator: TabBarCoordinator?
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
@@ -38,6 +38,10 @@ class ProductsCoordinator: NSObject, Coordinator {
         child.parentCoordinator = self
         childCoordinators.append(child)
         child.start()
+    }
+    
+    func switchToSecondTab() {
+        parentCoordinator?.tabBarController.selectedIndex = 1
     }
     
     func childDidFinish(_ child: Coordinator?) {

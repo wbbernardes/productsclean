@@ -22,10 +22,10 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     private func startProductsFlow() {
-        let child = ProductsCoordinator(navigationController: navigationController)
-        child.parentCoordinator = self
-        childCoordinators.append(child)
-        child.start()
+//        let child = ProductsCoordinator(navigationController: navigationController)
+//        child.parentCoordinator = self
+//        childCoordinators.append(child)
+//        child.start()
     }
     
     func childDidFinish(_ child: Coordinator?) {

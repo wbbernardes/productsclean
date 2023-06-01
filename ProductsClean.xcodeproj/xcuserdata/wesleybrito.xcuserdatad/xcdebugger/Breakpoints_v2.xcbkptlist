@@ -46,10 +46,122 @@
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "childDidFinish(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7013E5B8-529C-475B-95A8-ABB509E86005 - 10e6db8d18337d97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.childDidFinish(Swift.Optional&lt;ProductsClean.Coordinator&gt;) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "7013E5B8-529C-475B-95A8-ABB509E86005 - 10e6db8d18337d97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.childDidFinish(Swift.Optional&lt;ProductsClean.Coordinator&gt;) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11ADA992-018A-4528-AE2A-82C48D2C7758"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Presentation/ThirdView/ThirdView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4ADBC55C-EB47-4656-B055-C879EC11B91E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A0D2468-A622-4433-887D-25F0FED178CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "startThirdFlow()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A0D2468-A622-4433-887D-25F0FED178CB - af9a739d2d149864"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.startThirdFlow() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "9A0D2468-A622-4433-887D-25F0FED178CB - af9a739d2d149864"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.startThirdFlow() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

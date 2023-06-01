@@ -16,9 +16,9 @@ struct ThirdView: View {
                 .font(.title)
             
             Button {
-                coordinator.navigationController.popViewController(animated: true)
+                coordinator.parentCoordinator?.switchToSecondTab()
             } label: {
-                Text("back")
+                Text("Change to favorite")
             }
             
             Button {
