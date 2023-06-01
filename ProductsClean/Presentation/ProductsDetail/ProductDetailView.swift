@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-import Domain
+import Domain //this is for speed up the development
 
 struct ProductDetailView: View {
-    @StateObject private var envDetail: EnvDetail = EnvDetail()
-    @EnvironmentObject var coordinator: Coordinator<MapRouter>
     let product: Product
+    let coordinator: ProductsCoordinator//this is for speed up the development
     
     var body: some View {
         ZStack {
@@ -22,29 +21,16 @@ struct ProductDetailView: View {
                     .font(.body)
                 
                 Button {
-                    envDetail.productDetailRouter = true
-//                    coordinator.show(.another(product: product))
+                    coordinator.startThirdFlow()
                 } label: {
-                    Text("Test")
+                    Text("NAVIGATE to Third Child")
                 }
-
             }
             .onAppear {
                 print("onAppear ProductDetailView")
             }
-            .padding()
             .navigationBarTitle(Text("ProductDetailView"), displayMode: .inline)
-            .background(navigationLinks)
         }
         
-    }
-    
-    var navigationLinks: some View {
-        VStack(spacing: 0) {
-            NavigationLink(
-                destination: AnotherView(product: product).environmentObject(coordinator),
-                isActive: $envDetail.productDetailRouter
-            ) { EmptyView() }
-        }
     }
 }

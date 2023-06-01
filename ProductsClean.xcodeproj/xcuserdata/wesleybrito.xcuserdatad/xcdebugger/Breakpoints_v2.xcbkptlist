@@ -7,65 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8AB83A2F-A149-48AB-A38A-E5636FC4CB7D"
-            shouldBeEnabled = "No"
+            uuid = "AE9E9C96-FF69-4CA1-825A-5F924F646045"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductsClean/Presentation/Products/ProductsView.swift"
+            filePath = "ProductsClean/Application/Coordinators/MainCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E"
+            uuid = "B77C7967-20DD-4AAE-883B-4F00F8B21ED6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "childDidFinish(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7013E5B8-529C-475B-95A8-ABB509E86005"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductsClean/ProductsCleanApp.swift"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "view()"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "childDidFinish(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E - 2b0e39ccdb0667c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProductsClean.MapRouter.view() -&gt; some"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/ProductsCleanApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "688">
-               </Location>
-               <Location
-                  uuid = "0B65732E-EEF0-4ADE-8BFA-FB325F4C492E - 2b0e39ccdb0667c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProductsClean.MapRouter.view() -&gt; some"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/ProductsCleanApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "156">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

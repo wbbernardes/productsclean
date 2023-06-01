@@ -11,11 +11,11 @@ import DataLayer
 
 struct ProductsFactory {
     
-    static func makeProductsViewModel() -> ProductsViewModel {
+    static func makeProductsViewModel(coordinator: ProductsCoordinator) -> ProductsViewModel {
         let apiService: APIServiceProtocol = APIFactory.makeAPIService()
         let productRepository: ProductRepositoryProtocol = ProductRepositoryFactory.makeProductRepository(apiService: apiService)
         let fetchProductsUseCase: FetchProductsUseCaseProtocol = FetchProductsUseCaseFactory.makeProductsUseCase(productRepository: productRepository)
         
-        return ProductsViewModel(fetchProductsUseCase: fetchProductsUseCase)
+        return ProductsViewModel(coordinator: coordinator, fetchProductsUseCase: fetchProductsUseCase)
     }
 }

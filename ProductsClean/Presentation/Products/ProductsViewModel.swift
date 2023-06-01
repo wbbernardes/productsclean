@@ -9,15 +9,25 @@ import Foundation
 import Domain
 import Combine
 
-class ProductsViewModel: ObservableObject {
+protocol BaseViewModel: ObservableObject {
+    associatedtype CoordinatorType: Coordinator
+    var coordinator: CoordinatorType { get }
+}
+
+class ProductsViewModel: BaseViewModel {
     @Published var products: [Product] = []
-    @Published var selectedProduct: Product = .empty
     @Published var error: Error?
+    
+    var coordinator: ProductsCoordinator
     
     @Output var test = ""
     private let fetchProductsUseCase: FetchProductsUseCaseProtocol
     
-    init(fetchProductsUseCase: FetchProductsUseCaseProtocol) {
+    init(
+        coordinator: ProductsCoordinator,
+        fetchProductsUseCase: FetchProductsUseCaseProtocol
+    ) {
+        self.coordinator = coordinator
         self.fetchProductsUseCase = fetchProductsUseCase
     }
     
