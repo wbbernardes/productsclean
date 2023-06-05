@@ -16,15 +16,12 @@ final class SceneDelegate: NSObject, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-//        let navigationController = UINavigationController()
-//        let coordinator = MainCoordinator(navigationController: navigationController)
-//        coordinator.start()
+        let navigationController = UINavigationController()
+        let coordinator = OnboardingCoordinator(navigationController: navigationController)
+        coordinator.start()
         
-        let tabBarController: UITabBarController = UITabBarController()
-        let tabBarCoordinator: TabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController)
-        tabBarCoordinator.start()
         
-        window.rootViewController = tabBarController
+        window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
     }

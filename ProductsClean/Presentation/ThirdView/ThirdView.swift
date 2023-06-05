@@ -16,7 +16,7 @@ struct ThirdView: View {
                 .font(.title)
             
             Button {
-                coordinator.parentCoordinator?.switchToSecondTab()
+                coordinator.switchTab()
             } label: {
                 Text("Change to favorite")
             }
@@ -25,6 +25,18 @@ struct ThirdView: View {
                 coordinator.parentCoordinator?.navigationController.popToRootViewController(animated: true)
             } label: {
                 Text("poop to root")
+            }
+            
+            Button {
+                coordinator.parentCoordinator?.popToSpecificVC()
+            } label: {
+                Text("kill child")
+            }
+            
+            Button {
+                coordinator.parentCoordinator?.popToOnboard()
+            } label: {
+                Text("pop to onboarding")
             }
         }
         .onAppear {

@@ -23,4 +23,16 @@ class ThirdCoordinator: Coordinator {
         
         navigationController.pushViewController(hostingController, animated: true)
     }
+    
+    func switchTab() {
+        parentCoordinator?.switchToSecondTab()
+    }
+    
+    func popToSpecificVC() {
+        parentCoordinator?.popToSpecificVC()
+    }
+    
+    func popToOnboarding() {
+        parentCoordinator?.popToOnboard()
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  OnboardingCoordinator.swift
 //  ProductsClean
 //
 //  Created by Wesley Brito on 31/05/23.
@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class MainCoordinator: NSObject, Coordinator {
+class OnboardingCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
@@ -18,14 +18,21 @@ class MainCoordinator: NSObject, Coordinator {
 
     func start() {
         navigationController.delegate = self
-        startProductsFlow()
+        navigationController.setNavigationBarHidden(true, animated: false)
+        let view: OnboardingView = OnboardingView(coordinator: self)
+        let hostingController: UIHostingController<OnboardingView> = UIHostingController(rootView: view)
+        
+        navigationController.pushViewController(hostingController, animated: true)
     }
     
-    private func startProductsFlow() {
-//        let child = ProductsCoordinator(navigationController: navigationController)
-//        child.parentCoordinator = self
-//        childCoordinators.append(child)
-//        child.start()
+    func startTabFlow() {
+        let tabBarCoordinator: TabBarCoordinator = TabBarCoordinator(tabBarController: UITabBarController(), navigationController: navigationController, self)
+        childCoordinators.append(tabBarCoordinator)
+        tabBarCoordinator.start()
+    }
+    
+    func popToOnboard() {
+        navigationController.popToRootViewController(animated: true)
     }
     
     func childDidFinish(_ child: Coordinator?) {
@@ -38,7 +45,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
 }
 
-extension MainCoordinator: UINavigationControllerDelegate {
+extension OnboardingCoordinator: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         // Read the view controller we’re moving from.
         guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
@@ -50,10 +57,10 @@ extension MainCoordinator: UINavigationControllerDelegate {
             return
         }
         
-        // We’re still here – it means we’re popping the view controller, so we can check whether it’s a buy view controller
-        if let productsView = fromViewController as? UIHostingController<ProductsView> {
-            // We're popping a productsView; end its coordinator
-            childDidFinish(productsView.rootView.viewModel.coordinator)
+        if let tabBarController = fromViewController as? UITabBarController,
+            var viewControllers = tabBarController.viewControllers {
+            viewControllers.removeAll()
+            childCoordinators.removeAll()
         }
     }
 }

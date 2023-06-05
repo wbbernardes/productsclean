@@ -10,20 +10,20 @@ import SwiftUI
 import Domain
 
 class ProductsCoordinator: NSObject, Coordinator {
-    weak var parentCoordinator: TabBarCoordinator?
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
+    private weak var parentCoordinator: TabBarCoordinator?
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, parentCoordinator: TabBarCoordinator) {
         self.navigationController = navigationController
+        self.parentCoordinator = parentCoordinator
     }
-
+    
     func start() {
-        navigationController.delegate = self
+        self.navigationController.delegate = self
         let view: ProductsView = ProductsView(viewModel: ProductsFactory.makeProductsViewModel(coordinator: self))
         let hostingController: UIHostingController<ProductsView> = UIHostingController(rootView: view)
-        
-        navigationController.pushViewController(hostingController, animated: true)
+        self.navigationController.setViewControllers([hostingController], animated: true)
     }
     
     func startProductDetailFlow(product: Product) {
@@ -42,6 +42,18 @@ class ProductsCoordinator: NSObject, Coordinator {
     
     func switchToSecondTab() {
         parentCoordinator?.tabBarController.selectedIndex = 1
+    }
+    
+    func popToSpecificVC() {
+        for controller in navigationController.viewControllers {
+            if let view = controller as? UIHostingController<ProductDetailView> {
+                navigationController.popToViewController(view, animated: true)
+            }
+        }
+    }
+    
+    func popToOnboard() {
+        parentCoordinator?.popToOnboard()
     }
     
     func childDidFinish(_ child: Coordinator?) {
