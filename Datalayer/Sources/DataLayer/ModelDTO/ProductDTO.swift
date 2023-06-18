@@ -7,6 +7,7 @@
 
 import Foundation
 import Domain
+import CoreData
 
 public struct ProductDTO: Codable, Identifiable {
     public let id: Int
@@ -50,6 +51,15 @@ public struct ProductDTO: Codable, Identifiable {
         self.image = try container.decodeIfPresent(String.self, forKey: .image) ?? ""
         self.category = try container.decodeIfPresent(String.self, forKey: .category) ?? ""
     }
+    
+    init(productEntity: ProductEntity) {
+        self.id = Int(productEntity.id)
+        self.title = productEntity.title ?? ""
+        self.price = productEntity.price
+        self.description = productEntity.desc ?? ""
+        self.image = productEntity.image ?? ""
+        self.category = productEntity.category ?? ""
+    }
 }
 
 extension ProductDTO {
@@ -60,5 +70,17 @@ extension ProductDTO {
                           description: self.description,
                           image: self.image,
                           category: self.category)
+    }
+}
+
+extension ProductEntity {
+    public func toData() -> ProductDTO {
+        return ProductDTO(id: Int(self.id),
+                          title: self.title ?? "",
+                          price: self.price,
+                          description: self.desc ?? "",
+                          image: self.image ?? "",
+                          category: self.category ?? ""
+        )
     }
 }

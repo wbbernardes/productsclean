@@ -64,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "popToOnboard()"
+            landmarkName = "childDidFinish(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -175,7 +175,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "startThirdFlow()"
+            landmarkName = "switchToSecondTab()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -206,6 +206,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "9B94DD66-14F8-4F89-A0FA-6F296A31FF53 - c7b7710aa0d084c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.switchToSecondTab() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/cleanprojects/ProductsClean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -239,7 +254,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "startProductDetailFlow(product:)"
+            landmarkName = "startThirdFlow()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -367,7 +382,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "popToSpecificVC()"
+            landmarkName = "popToOnboard()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
