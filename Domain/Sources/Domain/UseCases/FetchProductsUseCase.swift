@@ -8,10 +8,6 @@
 import Foundation
 import Combine
 
-public protocol ProductRepositoryProtocol {
-    func fetchProducts() async throws -> [Product]
-}
-
 public protocol FetchProductsUseCaseProtocol {
     func execute() async throws -> [Product]
 }

@@ -1,5 +1,5 @@
 //
-//  ProductStorageService.swift
+//  ProductStorage.swift
 //  
 //
 //  Created by Wesley Brito on 18/06/23.
@@ -7,7 +7,13 @@
 
 import CoreData
 
-class ProductStorageService {
+public protocol ProductStorageProtocol {
+    func fetchProducts() async throws -> [ProductDTO]
+    func save(products: [ProductDTO]) async throws
+    func deleteAllProducts() async throws
+}
+
+class ProductStorage: ProductStorageProtocol {
     private let container: NSPersistentContainer
 
     init(container: NSPersistentContainer) {
@@ -64,3 +70,8 @@ class ProductStorageService {
     }
 }
 
+public struct ProductStorageFactory {
+    public static func makeProductStorage(container: NSPersistentContainer) -> ProductStorageProtocol {
+        return ProductStorage(container: container)
+    }
+}
