@@ -15,17 +15,18 @@ struct FavoriteView: View {
             Text("I'm a Favorite Tab")
                 .font(.title)
             
-            Button {
-//                coordinator.navigationController.popViewController(animated: true)
-            } label: {
-                Text("back")
-            }
+//            Button {
+////                coordinator.navigationController.popViewController(animated: true)
+//            } label: {
+//                Text("back")
+//            }
             
             Button {
-//                coordinator.parentCoordinator?.navigationController.popToRootViewController(animated: true)
+                coordinator.popToOnboard()
             } label: {
-                Text("poop to root")
+                Text("poop to Onboarding")
             }
+            .padding(.top, 16)
         }
         .onAppear {
             print("onAppear FavoriteView")

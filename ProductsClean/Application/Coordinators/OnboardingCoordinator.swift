@@ -11,7 +11,8 @@ import SwiftUI
 class OnboardingCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-
+    var tabBarController: UITabBarController = UITabBarController()
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -26,12 +27,13 @@ class OnboardingCoordinator: NSObject, Coordinator {
     }
     
     func startTabFlow() {
-        let tabBarCoordinator: TabBarCoordinator = TabBarCoordinator(tabBarController: UITabBarController(), navigationController: navigationController, self)
+        let tabBarCoordinator: TabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController, navigationController: navigationController, self)
         childCoordinators.append(tabBarCoordinator)
         tabBarCoordinator.start()
     }
     
     func popToOnboard() {
+//        childCoordinators.removeAll()
         navigationController.popToRootViewController(animated: true)
     }
     

@@ -16,7 +16,12 @@ class ThirdCoordinator: Coordinator {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-
+    
+    // check if deinit is being called
+    deinit {
+        print("deinit ThirdCoordinator")
+    }
+    
     func start() {
         let view: ThirdView = ThirdView(coordinator: self)
         let hostingController: UIHostingController<ThirdView> = UIHostingController(rootView: view)
@@ -34,5 +39,9 @@ class ThirdCoordinator: Coordinator {
     
     func popToOnboarding() {
         parentCoordinator?.popToOnboard()
+    }
+    
+    func popToRoot() {
+        parentCoordinator?.popToRoot()
     }
 }

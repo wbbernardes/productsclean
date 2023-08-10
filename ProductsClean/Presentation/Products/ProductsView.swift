@@ -26,7 +26,7 @@ struct ProductsView: View {
                         .font(.caption)
                 }
                 .onTapGesture {
-                    viewModel.coordinator.startProductDetailFlow(product: product)
+                    viewModel.openProductDetail(product: product)
                 }
             }
         }

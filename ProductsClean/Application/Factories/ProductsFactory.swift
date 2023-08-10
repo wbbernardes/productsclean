@@ -18,4 +18,8 @@ struct ProductsFactory {
         
         return ProductsViewModel(coordinator: coordinator, fetchProductsUseCase: fetchProductsUseCase)
     }
+    
+    static func makeProductDetailViewModel(product: Product, coordinator: ProductsCoordinator) -> ProductDetailViewModel {
+        return ProductDetailViewModel(product: product, coordinator: coordinator)
+    }
 }

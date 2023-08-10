@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ThirdView: View {
-    var coordinator: ThirdCoordinator//this is for speed up the development
+    var coordinator: ThirdCoordinator //this is for speed up the development
     
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             Text("I'm a Third and a \nChild of Products Coordinator")
                 .font(.title)
             
@@ -22,19 +22,19 @@ struct ThirdView: View {
             }
             
             Button {
-                coordinator.parentCoordinator?.navigationController.popToRootViewController(animated: true)
+                coordinator.popToRoot()
             } label: {
                 Text("poop to root")
             }
             
             Button {
-                coordinator.parentCoordinator?.popToSpecificVC()
+                coordinator.popToSpecificVC()
             } label: {
-                Text("kill child")
+                Text("popToSpecificViewController")
             }
             
             Button {
-                coordinator.parentCoordinator?.popToOnboard()
+                coordinator.popToOnboarding()
             } label: {
                 Text("pop to onboarding")
             }

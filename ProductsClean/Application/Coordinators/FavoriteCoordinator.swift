@@ -24,4 +24,8 @@ class FavoriteCoordinator: Coordinator {
         
         navigationController.pushViewController(hostingController, animated: true)
     }
+    
+    func popToOnboard() {
+        parentCoordinator?.popToOnboard()
+    }
 }

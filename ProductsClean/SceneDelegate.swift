@@ -20,6 +20,12 @@ final class SceneDelegate: NSObject, UIWindowSceneDelegate {
         let coordinator = OnboardingCoordinator(navigationController: navigationController)
         coordinator.start()
         
+//        tab flow
+//        let tabBarController: UITabBarController = UITabBarController()
+//        let tabBarCoordinator: TabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController)
+//        tabBarCoordinator.start()
+//
+//        window.rootViewController = tabBarController
         
         window.rootViewController = navigationController
         self.window = window

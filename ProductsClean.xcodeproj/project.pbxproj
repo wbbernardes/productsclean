@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1119F672A8486BA000D3764 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1119F662A8486BA000D3764 /* ProductDetailViewModel.swift */; };
 		B12CC61A2A19ADA300FBD153 /* ProductsCleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12CC6192A19ADA300FBD153 /* ProductsCleanApp.swift */; };
 		B12CC61E2A19ADA500FBD153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12CC61D2A19ADA500FBD153 /* Assets.xcassets */; };
 		B12CC6212A19ADA500FBD153 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12CC6202A19ADA500FBD153 /* Preview Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1119F662A8486BA000D3764 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		B12CC6162A19ADA300FBD153 /* ProductsClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12CC6192A19ADA300FBD153 /* ProductsCleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCleanApp.swift; sourceTree = "<group>"; };
 		B12CC61D2A19ADA500FBD153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C654092A1EB8DB00B6E66D /* ProductDetailView.swift */,
+				B1119F662A8486BA000D3764 /* ProductDetailViewModel.swift */,
 			);
 			path = ProductsDetail;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				B185552F2A285539003FC475 /* FavoriteView.swift in Sources */,
 				B1FC01F92A1AEC1900893C4B /* ProductsFactory.swift in Sources */,
 				B18555262A2848AA003FC475 /* ThirdCoordinator.swift in Sources */,
+				B1119F672A8486BA000D3764 /* ProductDetailViewModel.swift in Sources */,
 				B1C6540A2A1EB8DB00B6E66D /* ProductDetailView.swift in Sources */,
 				B18555212A28375B003FC475 /* ProductsCoordinator.swift in Sources */,
 				B1FC01FD2A1AECD000893C4B /* ProductsViewModel.swift in Sources */,

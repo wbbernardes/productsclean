@@ -20,8 +20,8 @@ class ProductsViewModel: BaseViewModel {
     
     var coordinator: ProductsCoordinator
     
-    @Output var test = ""
     private let fetchProductsUseCase: FetchProductsUseCaseProtocol
+//    @Output var test = ""
     
     init(
         coordinator: ProductsCoordinator,
@@ -40,22 +40,27 @@ class ProductsViewModel: BaseViewModel {
             }
         }
     }
-}
-
-@propertyWrapper
-struct Output<Value> {
-    var wrappedValue: Value {
-        get { subject.value }
-        set { subject.send(newValue) }
-    }
-
-    var projectedValue: AnyPublisher<Value, Never> {
-        subject.eraseToAnyPublisher()
-    }
-
-    private let subject: CurrentValueSubject<Value, Never>
-
-    init(wrappedValue: Value) {
-        subject = CurrentValueSubject(wrappedValue)
+    
+    func openProductDetail(product: Product) {
+        coordinator.startProductDetailFlow(product: product)
     }
 }
+
+// this guy need some tests
+//@propertyWrapper
+//struct Output<Value> {
+//    var wrappedValue: Value {
+//        get { subject.value }
+//        set { subject.send(newValue) }
+//    }
+//
+//    var projectedValue: AnyPublisher<Value, Never> {
+//        subject.eraseToAnyPublisher()
+//    }
+//
+//    private let subject: CurrentValueSubject<Value, Never>
+//
+//    init(wrappedValue: Value) {
+//        subject = CurrentValueSubject(wrappedValue)
+//    }
+//}

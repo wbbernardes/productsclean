@@ -9,22 +9,26 @@ import SwiftUI
 import Domain //this is for speed up the development
 
 struct ProductDetailView: View {
-    let product: Product
-    let coordinator: ProductsCoordinator//this is for speed up the development
+    @StateObject var viewModel: ProductDetailViewModel
+    
+    init(viewModel: ProductDetailViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         ZStack {
             VStack {
-                Text(product.title)
+                Text(viewModel.product.title)
                     .font(.title)
-                Text(product.description)
+                Text(viewModel.product.description)
                     .font(.body)
                 
                 Button {
-                    coordinator.startThirdFlow()
+                    viewModel.openThirdFlow()
                 } label: {
                     Text("NAVIGATE to Third Child")
                 }
+                .padding(.top, 32)
             }
             .onAppear {
                 print("onAppear ProductDetailView")

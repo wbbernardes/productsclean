@@ -55,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7013E5B8-529C-475B-95A8-ABB509E86005"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "childDidFinish(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "11ADA992-018A-4528-AE2A-82C48D2C7758"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -141,8 +125,8 @@
             filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "start()"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,14 +151,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9B94DD66-14F8-4F89-A0FA-6F296A31FF53"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "switchToSecondTab()"
             landmarkType = "7">
             <Locations>
@@ -223,6 +207,21 @@
                   endingLineNumber = "44"
                   offsetFromSymbolStart = "28">
                </Location>
+               <Location
+                  uuid = "9B94DD66-14F8-4F89-A0FA-6F296A31FF53 - 8787b5d3412ef642"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.switchToSecondTab() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "28">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -236,8 +235,8 @@
             filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "start()"
             landmarkType = "7">
          </BreakpointContent>
@@ -252,8 +251,8 @@
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "startThirdFlow()"
             landmarkType = "7">
          </BreakpointContent>
@@ -268,8 +267,8 @@
             filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "start()"
             landmarkType = "7">
             <Locations>
@@ -316,8 +315,8 @@
             filePath = "ProductsClean/Application/Coordinators/ThirdCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "switchTab()"
             landmarkType = "7">
          </BreakpointContent>
@@ -326,14 +325,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0803B2D9-CF36-401B-8A53-358A5C79C8B0"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "TabBarCoordinator"
             landmarkType = "3">
             <Locations>
@@ -367,6 +366,36 @@
                   endingLineNumber = "24"
                   offsetFromSymbolStart = "48">
                </Location>
+               <Location
+                  uuid = "0803B2D9-CF36-401B-8A53-358A5C79C8B0 - 51cde0238778e7e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.TabBarCoordinator.__deallocating_deinit"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "0803B2D9-CF36-401B-8A53-358A5C79C8B0 - 51cde0238778e7e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.TabBarCoordinator.__deallocating_deinit"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "48">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -380,8 +409,8 @@
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "popToOnboard()"
             landmarkType = "7">
          </BreakpointContent>
@@ -573,6 +602,468 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "popToOnboard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB49BB74-AAFE-4DEF-9FE9-172DB2B0947A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB49BB74-AAFE-4DEF-9FE9-172DB2B0947A - bac4228b774be300"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "696">
+               </Location>
+               <Location
+                  uuid = "EB49BB74-AAFE-4DEF-9FE9-172DB2B0947A - bac4228b774be300"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.ProductsCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3906E56F-86FC-45C4-B481-5D6DB172C602"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "popToOnboard()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3906E56F-86FC-45C4-B481-5D6DB172C602 - 25796c12ba12b215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.popToOnboard() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "3906E56F-86FC-45C4-B481-5D6DB172C602 - 25796c12ba12b215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.popToOnboard() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3906E56F-86FC-45C4-B481-5D6DB172C602 - 25796c12ba12b215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.popToOnboard() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "3906E56F-86FC-45C4-B481-5D6DB172C602 - 25796c12ba12b215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.popToOnboard() -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A68587A-A137-4F69-BB5B-5769E3EEF158"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49DCB874-3234-4FB3-9099-18CC66714F4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Presentation/ProductsDetail/ProductDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "openThirdFlow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58FCD919-3AE4-4FFD-ADA5-86BA8BB671AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "ProductsCoordinator"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1468D65B-39AA-42E3-AE0E-5FE26C359D3E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ThirdCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ThirdCoordinator"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E426E02B-09EA-498D-9C23-131C456E9CA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "popToRoot()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E04405A-4C0F-40D4-AC80-4F8A42D06DD9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/ThirdCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "popToRoot()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F93543F-B6E6-4B6E-89A9-31E3E7D4C18E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E68B75D-22B0-49BD-958B-B665D2EA4ACC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75383555-AB81-4824-8927-E29DE3046A00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75383555-AB81-4824-8927-E29DE3046A00 - f3e0a8419170db8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "75383555-AB81-4824-8927-E29DE3046A00 - f3e0a8419170db8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.OnboardingCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "604">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76DA1C92-30A6-44A1-8AA8-CD2FC21F22FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD7983DB-46BE-43E8-9DB6-51C2A31896F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "302E6D92-1610-48A4-94C7-D27805A5582E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6150F9F-627D-410E-82A5-66CB9F764C35"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E6150F9F-627D-410E-82A5-66CB9F764C35 - bb01f6971258cb2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.TabBarCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  uuid = "E6150F9F-627D-410E-82A5-66CB9F764C35 - bb01f6971258cb2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsClean.TabBarCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
+                  moduleName = "ProductsClean"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25BEB328-A9F2-4066-8747-B24D543B255B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "navigationController(_:didShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD882989-2E41-4F8A-997A-5EC5155E9162"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "583A2F62-7A86-4321-8FEF-4ED7787E6C65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41EC2DF1-BCD3-4385-86EB-B55D2C3D74D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/OnboardingCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "startTabFlow()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
