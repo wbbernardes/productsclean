@@ -21,7 +21,6 @@ class ProductsCoordinator: NSObject, Coordinator {
     
     // check if deinit is being called
     deinit {
-        navigationController.delegate = nil
         print("deinit ProductsCoordinator")
     }
     
@@ -63,7 +62,22 @@ class ProductsCoordinator: NSObject, Coordinator {
     }
     
     func popToOnboard() {
+        parentCoordinator?.childDidFinish(self)
+        parentCoordinator?.navigationDidFinish()
         parentCoordinator?.popToOnboard()
+    }
+    
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
+    }
+    
+    func navigationDidFinish() {
+        navigationController.viewControllers.removeAll()
     }
 }
 
@@ -82,6 +96,7 @@ extension ProductsCoordinator: UINavigationControllerDelegate {
         // We’re still here – it means we’re popping the view controller, so we can check whether it’s a buy view controller
         if fromViewController is UIHostingController<ThirdView> {
             // We're popping a thirdView; end its coordinator
+            navigationController.viewControllers.removeAll(where: { $0 === fromViewController})
             childCoordinators.removeAll()
         }
     }

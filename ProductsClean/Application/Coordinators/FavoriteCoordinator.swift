@@ -17,7 +17,11 @@ class FavoriteCoordinator: Coordinator {
         self.navigationController = navigationController
         self.parentCoordinator = parentCoordinator
     }
-
+    
+    deinit {
+        print("deinit FavoriteCoordinator")
+    }
+    
     func start() {
         let view: FavoriteView = FavoriteView(coordinator: self)
         let hostingController: UIHostingController<FavoriteView> = UIHostingController(rootView: view)

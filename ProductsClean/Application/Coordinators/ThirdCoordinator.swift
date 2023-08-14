@@ -38,6 +38,8 @@ class ThirdCoordinator: Coordinator {
     }
     
     func popToOnboarding() {
+        parentCoordinator?.childDidFinish(self)
+        parentCoordinator?.navigationDidFinish()
         parentCoordinator?.popToOnboard()
     }
     

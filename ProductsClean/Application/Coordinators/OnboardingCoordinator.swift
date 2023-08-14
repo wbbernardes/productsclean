@@ -10,15 +10,15 @@ import SwiftUI
 
 class OnboardingCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController = UINavigationController()
     var tabBarController: UITabBarController = UITabBarController()
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
+//    init(navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
 
     func start() {
-        navigationController.delegate = self
+//        navigationController.delegate = self
         navigationController.setNavigationBarHidden(true, animated: false)
         let view: OnboardingView = OnboardingView(coordinator: self)
         let hostingController: UIHostingController<OnboardingView> = UIHostingController(rootView: view)
@@ -33,7 +33,7 @@ class OnboardingCoordinator: NSObject, Coordinator {
     }
     
     func popToOnboard() {
-//        childCoordinators.removeAll()
+        childCoordinators.removeAll()
         navigationController.popToRootViewController(animated: true)
     }
     
@@ -47,22 +47,22 @@ class OnboardingCoordinator: NSObject, Coordinator {
     }
 }
 
-extension OnboardingCoordinator: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        // Read the view controller we’re moving from.
-        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
-            return
-        }
-        
-        // Check whether our view controller array already contains that view controller. If it does it means we’re pushing a different view controller on top rather than popping it, so exit.
-        if navigationController.viewControllers.contains(fromViewController) {
-            return
-        }
-        
-        if let tabBarController = fromViewController as? UITabBarController,
-            var viewControllers = tabBarController.viewControllers {
-            viewControllers.removeAll()
-            childCoordinators.removeAll()
-        }
-    }
-}
+//extension OnboardingCoordinator: UINavigationControllerDelegate {
+//    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+//        // Read the view controller we’re moving from.
+//        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
+//            return
+//        }
+//
+//        // Check whether our view controller array already contains that view controller. If it does it means we’re pushing a different view controller on top rather than popping it, so exit.
+//        if navigationController.viewControllers.contains(fromViewController) {
+//            return
+//        }
+//
+//        if let tabBarController = fromViewController as? UITabBarController,
+//            var viewControllers = tabBarController.viewControllers {
+//            viewControllers.removeAll()
+//            childCoordinators.removeAll()
+//        }
+//    }
+//}

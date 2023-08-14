@@ -13,3 +13,19 @@ public protocol Coordinator: AnyObject {
     
     func start()
 }
+
+class WeakCoordinator {
+    weak var value: Coordinator?
+    
+    init(_ value: Coordinator?) {
+        self.value = value
+    }
+}
+
+class Weak<T: AnyObject> {
+    weak var value: T?
+    
+    init(_ value: T?) {
+        self.value = value
+    }
+}

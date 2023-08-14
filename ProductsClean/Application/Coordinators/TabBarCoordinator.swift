@@ -27,7 +27,7 @@ class TabBarCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        navigationController.delegate = self
+//        navigationController.delegate = self
         navigationController.setNavigationBarHidden(true, animated: false)
         let productsCoordinator = ProductsCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
         let favoriteCoordinator = FavoriteCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
@@ -52,32 +52,28 @@ class TabBarCoordinator: NSObject, Coordinator {
     }
     
     func popToOnboard() {
-        parentCoordinator?.popToOnboard()
+        childCoordinators.removeAll()
+        parentCoordinator?.childDidFinish(self)
+        navigationController.popToRootViewController(animated: true)
+        print("test")
+//        tabBarController.selectedViewController?.navigationController?.popToRootViewController(animated: true)
+//        tabBarController.viewControllers = nil
+//        parentCoordinator?.popToOnboard()
     }
-}
-
-extension TabBarCoordinator: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        // Read the view controller we’re moving from.
-        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
-            return
+    
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
         }
-
-        // Check whether our view controller array already contains that view controller. If it does it means we’re pushing a different view controller on top rather than popping it, so exit.
-        if navigationController.viewControllers.contains(fromViewController) {
-            return
-        }
-
-        // We’re still here – it means we’re popping the view controller, so we can check whether it’s a buy view controller
-        if fromViewController is UIHostingController<ProductsView> || fromViewController is UIHostingController<ProductDetailView> {
-            // We're popping a thirdView; end its coordinator
-            childCoordinators.removeAll()
-        }
-        
-        if let tabBarController = fromViewController as? UITabBarController,
-            var viewControllers = tabBarController.viewControllers {
-            viewControllers.removeAll()
-            childCoordinators.removeAll()
-        }
+    }
+    
+    func navigationDidFinish() {
+        print("test")
+//        tabBarController.viewControllers?.removeAll()
+//        navigationController.viewControllers.removeAll(where: { $0 === tabBarController })
+//        navigationController.viewControllers.removeAll()
     }
 }
