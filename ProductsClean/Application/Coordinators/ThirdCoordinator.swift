@@ -10,7 +10,6 @@ import SwiftUI
 
 class ThirdCoordinator: Coordinator {
     weak var parentCoordinator: ProductsCoordinator?
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
     init(navigationController: UINavigationController) {
@@ -38,8 +37,6 @@ class ThirdCoordinator: Coordinator {
     }
     
     func popToOnboarding() {
-        parentCoordinator?.childDidFinish(self)
-        parentCoordinator?.navigationDidFinish()
         parentCoordinator?.popToOnboard()
     }
     

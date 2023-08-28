@@ -10,9 +10,10 @@ import SwiftUI
 
 class TabBarCoordinator: NSObject, Coordinator {
     private weak var parentCoordinator: OnboardingCoordinator?
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     var tabBarController: UITabBarController
+    var productsNavigationController: UINavigationController = UINavigationController()
+    var favoriteNavigationController: UINavigationController = UINavigationController()
 
     init(tabBarController: UITabBarController, navigationController: UINavigationController, _ parentCoordinator: OnboardingCoordinator) {
         self.tabBarController = tabBarController
@@ -22,23 +23,13 @@ class TabBarCoordinator: NSObject, Coordinator {
 
     // check if deinit is being called
     deinit {
-//        navigationController.delegate = nil
         print("deinit TabBarCoordinator")
     }
     
     func start() {
-//        navigationController.delegate = self
         navigationController.setNavigationBarHidden(true, animated: false)
-        let productsCoordinator = ProductsCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
-        let favoriteCoordinator = FavoriteCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
-        
-        // Add each coordinator to the childCoordinators array
-        childCoordinators.append(productsCoordinator)
-        childCoordinators.append(favoriteCoordinator)
-
-        // Start each coordinator
-        productsCoordinator.start()
-        favoriteCoordinator.start()
+        let productsCoordinator = ProductsCoordinator(navigationController: productsNavigationController, parentCoordinator: self)
+        let favoriteCoordinator = FavoriteCoordinator(navigationController: favoriteNavigationController, parentCoordinator: self)
 
         // Create the tab bar items
         productsCoordinator.navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
@@ -47,33 +38,18 @@ class TabBarCoordinator: NSObject, Coordinator {
         // Add the navigation controllers to the tab bar controller
         tabBarController.viewControllers = [productsCoordinator.navigationController, favoriteCoordinator.navigationController]
         
+        // Start each coordinator
+        productsCoordinator.start()
+        favoriteCoordinator.start()
+        
         // Push the tab bar controller into the navigation stack
         navigationController.pushViewController(tabBarController, animated: true)
     }
     
     func popToOnboard() {
-        childCoordinators.removeAll()
-        parentCoordinator?.childDidFinish(self)
-        navigationController.popToRootViewController(animated: true)
-        print("test")
-//        tabBarController.selectedViewController?.navigationController?.popToRootViewController(animated: true)
-//        tabBarController.viewControllers = nil
-//        parentCoordinator?.popToOnboard()
-    }
-    
-    func childDidFinish(_ child: Coordinator?) {
-        for (index, coordinator) in childCoordinators.enumerated() {
-            if coordinator === child {
-                childCoordinators.remove(at: index)
-                break
-            }
-        }
-    }
-    
-    func navigationDidFinish() {
-        print("test")
-//        tabBarController.viewControllers?.removeAll()
-//        navigationController.viewControllers.removeAll(where: { $0 === tabBarController })
-//        navigationController.viewControllers.removeAll()
+        productsNavigationController.viewControllers.removeAll()
+        favoriteNavigationController.viewControllers.removeAll()
+        tabBarController.viewControllers?.removeAll()
+        parentCoordinator?.popToOnboard()
     }
 }

@@ -10,7 +10,6 @@ import SwiftUI
 
 class FavoriteCoordinator: Coordinator {
     private weak var parentCoordinator: TabBarCoordinator?
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
     init(navigationController: UINavigationController, parentCoordinator: TabBarCoordinator) {
@@ -31,10 +30,5 @@ class FavoriteCoordinator: Coordinator {
     
     func popToOnboard() {
         parentCoordinator?.popToOnboard()
-        navigationController.viewControllers.removeAll()
     }
-    
-//    func navigationDidFinish() {
-//        navigationController.viewControllers.removeAll()
-//    }
 }
