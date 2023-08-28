@@ -727,8 +727,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "0F93543F-B6E6-4B6E-89A9-31E3E7D4C18E - f3e0a8419170daea"
@@ -775,8 +775,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "0E68B75D-22B0-49BD-958B-B665D2EA4ACC - f3e0a8419170db2c"
@@ -823,8 +823,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "75383555-AB81-4824-8927-E29DE3046A00 - f3e0a8419170db8f"
@@ -901,8 +901,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "76DA1C92-30A6-44A1-8AA8-CD2FC21F22FD - f3e0a8419170dc33"
@@ -949,8 +949,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
-            landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "DD7983DB-46BE-43E8-9DB6-51C2A31896F0 - f3e0a8419170dcd8"
@@ -1404,7 +1404,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CB74B6D8-3F04-47E8-95E4-DA88A016DE60"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
@@ -1413,7 +1413,7 @@
             startingLineNumber = "99"
             endingLineNumber = "99"
             landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "CB74B6D8-3F04-47E8-95E4-DA88A016DE60 - bac4228b774be177"
@@ -1467,7 +1467,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "AAA54B0A-1BB1-4823-8A3E-A01A4CF59A2C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
@@ -1476,39 +1476,7 @@
             startingLineNumber = "100"
             endingLineNumber = "100"
             landmarkName = "navigationController(_:didShow:animated:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "AAA54B0A-1BB1-4823-8A3E-A01A4CF59A2C - bac4228b774be156"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProductsClean.ProductsCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "1068">
-               </Location>
-               <Location
-                  uuid = "AAA54B0A-1BB1-4823-8A3E-A01A4CF59A2C - bac4228b774be156"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProductsClean.ProductsCoordinator.navigationController(_: __C.UINavigationController, didShow: __C.UIViewController, animated: Swift.Bool) -&gt; ()"
-                  moduleName = "ProductsClean"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wesleybrito/Documents/iOS/productsclean/ProductsClean/Application/Coordinators/ProductsCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "940">
-               </Location>
-            </Locations>
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1563,7 +1531,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F37B4E5F-4B97-41BA-AD8A-985B7F9BF7FB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
@@ -1605,6 +1573,22 @@
                   offsetFromSymbolStart = "500">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB20B6B2-CB52-4DF3-BBE9-C8E9C1D12D9D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsClean/Application/Coordinators/TabBarCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "popToOnboard()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

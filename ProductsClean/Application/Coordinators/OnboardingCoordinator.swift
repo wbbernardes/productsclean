@@ -10,12 +10,12 @@ import SwiftUI
 
 class OnboardingCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
-    var navigationController: UINavigationController = UINavigationController()
+    var navigationController: UINavigationController
     var tabBarController: UITabBarController = UITabBarController()
     
-//    init(navigationController: UINavigationController) {
-//        self.navigationController = navigationController
-//    }
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
 
     func start() {
 //        navigationController.delegate = self

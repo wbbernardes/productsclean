@@ -31,5 +31,10 @@ class FavoriteCoordinator: Coordinator {
     
     func popToOnboard() {
         parentCoordinator?.popToOnboard()
+        navigationController.viewControllers.removeAll()
     }
+    
+//    func navigationDidFinish() {
+//        navigationController.viewControllers.removeAll()
+//    }
 }
