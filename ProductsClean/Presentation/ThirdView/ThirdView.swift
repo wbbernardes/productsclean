@@ -38,6 +38,18 @@ struct ThirdView: View {
             } label: {
                 Text("pop to onboarding")
             }
+            
+            Button {
+                coordinator.presentFourthView()
+            } label: {
+                Text("Present FourthView")
+            }
+            
+            Button {
+                coordinator.sheetFifthView()
+            } label: {
+                Text("Sheet FifthView")
+            }
         }
         .onAppear {
             print("onAppear ThirdView")

@@ -28,6 +28,33 @@ class ThirdCoordinator: Coordinator {
         navigationController.pushViewController(hostingController, animated: true)
     }
     
+    func presentFourthView() {
+        let view: FourthView = FourthView(coordinator: self)
+        let hostingController: UIHostingController<FourthView> = UIHostingController(rootView: view)
+        hostingController.modalPresentationStyle = .fullScreen
+        navigationController.topViewController?.present(hostingController, animated: true)
+    }
+    
+    func dismissFourthView() {
+        navigationController.topViewController?.dismiss(animated: true)
+    }
+    
+    func sheetFifthView() {
+        let view: FifthView = FifthView(coordinator: self)
+        let hostingController: UIHostingController<FifthView> = UIHostingController(rootView: view)
+        hostingController.modalPresentationStyle = .pageSheet
+        
+        navigationController.topViewController?.present(hostingController, animated: true, completion: {
+            if let sheet = hostingController.sheetPresentationController {
+                sheet.detents = [.medium()]
+            }
+        })
+    }
+    
+    func sheetDismiss() {
+        navigationController.topViewController?.dismiss(animated: true)
+    }
+    
     func switchTab() {
         parentCoordinator?.switchToSecondTab()
     }
