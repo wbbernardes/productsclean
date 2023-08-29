@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ThirdView: View {
-    var coordinator: ThirdCoordinator //this is for speed up the development
+    weak var coordinator: ThirdCoordinator? //this is for speed up the development
     
     var body: some View {
         VStack(spacing: 16) {
@@ -16,38 +16,38 @@ struct ThirdView: View {
                 .font(.title)
             
             Button {
-                coordinator.switchTab()
+                coordinator?.switchTab()
             } label: {
                 Text("Change to favorite")
             }
             
             Button {
-                coordinator.popToRoot()
+                coordinator?.popToRoot()
             } label: {
                 Text("poop to root")
             }
             
             Button {
-                coordinator.popToSpecificVC()
+                coordinator?.popToSpecificVC()
             } label: {
                 Text("popToSpecificViewController")
             }
             
             Button {
-                coordinator.popToOnboarding()
+                coordinator?.popToOnboarding()
             } label: {
                 Text("pop to onboarding")
             }
             
             Button {
-                coordinator.presentFourthView()
+                coordinator?.presentFourthView()
             } label: {
                 Text("Present FourthView")
             }
             .foregroundColor(.orange)
             
             Button {
-                coordinator.sheetFifthView()
+                coordinator?.sheetFifthView()
             } label: {
                 Text("Sheet FifthView")
             }

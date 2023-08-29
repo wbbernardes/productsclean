@@ -10,8 +10,10 @@ import SwiftUI
 
 class ThirdCoordinator: Coordinator {
     weak var parentCoordinator: ProductsCoordinator?
+    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-
+    var thirdNavigationController: UINavigationController?
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -24,19 +26,21 @@ class ThirdCoordinator: Coordinator {
     func start() {
         let view: ThirdView = ThirdView(coordinator: self)
         let hostingController: UIHostingController<ThirdView> = UIHostingController(rootView: view)
+        thirdNavigationController = UINavigationController(rootViewController: hostingController)
+        thirdNavigationController?.modalPresentationStyle = .fullScreen
         
-        navigationController.pushViewController(hostingController, animated: true)
+        navigationController.present(thirdNavigationController ?? UINavigationController(), animated: true)
     }
     
     func presentFourthView() {
         let view: FourthView = FourthView(coordinator: self)
         let hostingController: UIHostingController<FourthView> = UIHostingController(rootView: view)
         hostingController.modalPresentationStyle = .fullScreen
-        navigationController.topViewController?.present(hostingController, animated: true)
+        thirdNavigationController?.present(hostingController, animated: true)
     }
     
     func dismissFourthView() {
-        navigationController.topViewController?.dismiss(animated: true)
+        thirdNavigationController?.dismiss(animated: true)
     }
     
     func sheetFifthView() {
@@ -44,15 +48,15 @@ class ThirdCoordinator: Coordinator {
         let hostingController: UIHostingController<FifthView> = UIHostingController(rootView: view)
         hostingController.modalPresentationStyle = .pageSheet
         
-        navigationController.topViewController?.present(hostingController, animated: true, completion: {
-            if let sheet = hostingController.sheetPresentationController {
+        thirdNavigationController?.present(hostingController, animated: true) {
+            if let sheet = hostingController.presentationController as? UISheetPresentationController {
                 sheet.detents = [.medium()]
-            }
-        })
+            }//needs improve
+        }
     }
     
     func sheetDismiss() {
-        navigationController.topViewController?.dismiss(animated: true)
+        thirdNavigationController?.dismiss(animated: true)
     }
     
     func switchTab() {

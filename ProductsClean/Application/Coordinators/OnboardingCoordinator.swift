@@ -9,9 +9,8 @@ import UIKit
 import SwiftUI
 
 class OnboardingCoordinator: NSObject, Coordinator {
+    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    var tabBarController: UITabBarController = UITabBarController()
-    var tabBarCoordinator: TabBarCoordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -26,12 +25,17 @@ class OnboardingCoordinator: NSObject, Coordinator {
     }
     
     func startTabFlow() {
-        tabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController, navigationController: navigationController, parentCoordinator: self)
-        tabBarCoordinator?.start()
+        let tabBarCoordinator = TabBarCoordinator(
+//            tabBarController: tabBarController,
+            navigationController: navigationController,
+            parentCoordinator: self
+        )
+        childCoordinators.append(tabBarCoordinator)
+        tabBarCoordinator.start()
     }
     
     func popToOnboard() {
-        tabBarCoordinator = nil
+        childCoordinators.removeAll()
         navigationController.popToRootViewController(animated: true)
     }
 }

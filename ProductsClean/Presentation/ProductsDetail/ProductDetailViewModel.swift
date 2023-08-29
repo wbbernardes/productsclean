@@ -11,7 +11,7 @@ import Domain
 
 class ProductDetailViewModel: BaseViewModel {
     let product: Product
-    let coordinator: ProductsCoordinator
+    weak var coordinator: ProductsCoordinator?
     
     init(product: Product, coordinator: ProductsCoordinator) {
         self.product = product
@@ -19,6 +19,6 @@ class ProductDetailViewModel: BaseViewModel {
     }
     
     func openThirdFlow() {
-        coordinator.startThirdFlow()
+        coordinator?.startThirdFlow()
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 class FavoriteCoordinator: Coordinator {
     private weak var parentCoordinator: TabBarCoordinator?
+    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
     init(navigationController: UINavigationController, parentCoordinator: TabBarCoordinator) {

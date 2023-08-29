@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavoriteView: View {
-    var coordinator: FavoriteCoordinator//this is for speed up the development
+    weak var coordinator: FavoriteCoordinator?//this is for speed up the development
     
     var body: some View {
         VStack {
@@ -22,7 +22,7 @@ struct FavoriteView: View {
 //            }
             
             Button {
-                coordinator.popToOnboard()
+                coordinator?.popToOnboard()
             } label: {
                 Text("poop to Onboarding")
             }

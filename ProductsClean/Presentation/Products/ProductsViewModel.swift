@@ -11,14 +11,14 @@ import Combine
 
 protocol BaseViewModel: ObservableObject {
     associatedtype CoordinatorType: Coordinator
-    var coordinator: CoordinatorType { get }
+    var coordinator: CoordinatorType? { get }
 }
 
 class ProductsViewModel: BaseViewModel {
     @Published var products: [Product] = []
     @Published var error: Error?
     
-    var coordinator: ProductsCoordinator
+    weak var coordinator: ProductsCoordinator?
     
     private let fetchProductsUseCase: FetchProductsUseCaseProtocol
 //    @Output var test = ""
@@ -42,7 +42,7 @@ class ProductsViewModel: BaseViewModel {
     }
     
     func openProductDetail(product: Product) {
-        coordinator.startProductDetailFlow(product: product)
+        coordinator?.startProductDetailFlow(product: product)
     }
 }
 

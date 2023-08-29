@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FourthView: View {
-    var coordinator: ThirdCoordinator //this is for speed up the development
+    weak var coordinator: ThirdCoordinator? //this is for speed up the development
     
     var body: some View {
         VStack(spacing: 16) {
@@ -16,7 +16,7 @@ struct FourthView: View {
                 .font(.title)
             
             Button {
-                coordinator.dismissFourthView()
+                coordinator?.dismissFourthView()
             } label: {
                 Text("dismiss FourthView")
             }

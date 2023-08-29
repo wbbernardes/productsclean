@@ -10,23 +10,18 @@ import SwiftUI
 
 class TabBarCoordinator: NSObject, Coordinator {
     private weak var parentCoordinator: OnboardingCoordinator?
+    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    var tabBarController: UITabBarController
-    var productsNavigationController: UINavigationController
-    var favoriteNavigationController: UINavigationController
+    var tabBarController: UITabBarController = UITabBarController()
 
     init(
-        tabBarController: UITabBarController,
+//        tabBarController: UITabBarController,
         navigationController: UINavigationController,
-        parentCoordinator: OnboardingCoordinator,
-        productsNavigationController: UINavigationController = UINavigationController(),
-        favoriteNavigationController: UINavigationController = UINavigationController()
+        parentCoordinator: OnboardingCoordinator
     ) {
-        self.tabBarController = tabBarController
+//        self.tabBarController = tabBarController
         self.navigationController = navigationController
         self.parentCoordinator = parentCoordinator
-        self.productsNavigationController = productsNavigationController
-        self.favoriteNavigationController = favoriteNavigationController
     }
 
     // check if deinit is being called
@@ -36,9 +31,13 @@ class TabBarCoordinator: NSObject, Coordinator {
     
     func start() {
         navigationController.setNavigationBarHidden(true, animated: false)
-        let productsCoordinator = ProductsCoordinator(navigationController: productsNavigationController, parentCoordinator: self)
-        let favoriteCoordinator = FavoriteCoordinator(navigationController: favoriteNavigationController, parentCoordinator: self)
+        let productsCoordinator = ProductsCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
+        let favoriteCoordinator = FavoriteCoordinator(navigationController: UINavigationController(), parentCoordinator: self)
 
+        // Add each coordinator to the childCoordinators array
+        childCoordinators.append(productsCoordinator)
+        childCoordinators.append(favoriteCoordinator)
+        
         // Create the tab bar items
         productsCoordinator.navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         favoriteCoordinator.navigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
@@ -55,9 +54,6 @@ class TabBarCoordinator: NSObject, Coordinator {
     }
     
     func popToOnboard() {
-        productsNavigationController.viewControllers.removeAll()
-        favoriteNavigationController.viewControllers.removeAll()
-        tabBarController.viewControllers?.removeAll()
         parentCoordinator?.popToOnboard()
     }
 }
