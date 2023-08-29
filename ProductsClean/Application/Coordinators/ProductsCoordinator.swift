@@ -10,8 +10,8 @@ import SwiftUI
 import Domain
 
 class ProductsCoordinator: NSObject, Coordinator {
-    var navigationController: UINavigationController
     private weak var parentCoordinator: TabBarCoordinator?
+    var navigationController: UINavigationController
 
     init(navigationController: UINavigationController, parentCoordinator: TabBarCoordinator) {
         self.navigationController = navigationController
@@ -60,9 +60,5 @@ class ProductsCoordinator: NSObject, Coordinator {
     
     func popToOnboard() {
         parentCoordinator?.popToOnboard()
-    }
-    
-    func navigationDidFinish() {
-        navigationController.viewControllers.removeAll()
     }
 }

@@ -12,13 +12,21 @@ class TabBarCoordinator: NSObject, Coordinator {
     private weak var parentCoordinator: OnboardingCoordinator?
     var navigationController: UINavigationController
     var tabBarController: UITabBarController
-    var productsNavigationController: UINavigationController = UINavigationController()
-    var favoriteNavigationController: UINavigationController = UINavigationController()
+    var productsNavigationController: UINavigationController
+    var favoriteNavigationController: UINavigationController
 
-    init(tabBarController: UITabBarController, navigationController: UINavigationController, _ parentCoordinator: OnboardingCoordinator) {
+    init(
+        tabBarController: UITabBarController,
+        navigationController: UINavigationController,
+        parentCoordinator: OnboardingCoordinator,
+        productsNavigationController: UINavigationController = UINavigationController(),
+        favoriteNavigationController: UINavigationController = UINavigationController()
+    ) {
         self.tabBarController = tabBarController
         self.navigationController = navigationController
         self.parentCoordinator = parentCoordinator
+        self.productsNavigationController = productsNavigationController
+        self.favoriteNavigationController = favoriteNavigationController
     }
 
     // check if deinit is being called

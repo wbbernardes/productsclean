@@ -26,7 +26,7 @@ class OnboardingCoordinator: NSObject, Coordinator {
     }
     
     func startTabFlow() {
-        tabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController, navigationController: navigationController, self)
+        tabBarCoordinator = TabBarCoordinator(tabBarController: tabBarController, navigationController: navigationController, parentCoordinator: self)
         tabBarCoordinator?.start()
     }
     
