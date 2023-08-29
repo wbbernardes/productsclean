@@ -44,12 +44,14 @@ struct ThirdView: View {
             } label: {
                 Text("Present FourthView")
             }
+            .foregroundColor(.orange)
             
             Button {
                 coordinator.sheetFifthView()
             } label: {
                 Text("Sheet FifthView")
             }
+            .foregroundColor(.red)
         }
         .onAppear {
             print("onAppear ThirdView")
