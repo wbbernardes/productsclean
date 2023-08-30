@@ -47,12 +47,8 @@ class ThirdCoordinator: Coordinator {
         let view: FifthView = FifthView(coordinator: self)
         let hostingController: UIHostingController<FifthView> = UIHostingController(rootView: view)
         hostingController.modalPresentationStyle = .pageSheet
-        
-        thirdNavigationController?.present(hostingController, animated: true) {
-            if let sheet = hostingController.presentationController as? UISheetPresentationController {
-                sheet.detents = [.medium()]
-            }//needs improve
-        }
+        (hostingController.presentationController as? UISheetPresentationController)?.detents = [.medium()]
+        thirdNavigationController?.present(hostingController, animated: true)
     }
     
     func sheetDismiss() {
