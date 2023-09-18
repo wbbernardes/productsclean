@@ -26,6 +26,8 @@
 		B18555312A285649003FC475 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18555302A285649003FC475 /* TabBarCoordinator.swift */; };
 		B18555332A2856F4003FC475 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18555322A2856F4003FC475 /* FavoriteCoordinator.swift */; };
 		B1A55C732A2A91F10067856A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A55C722A2A91F10067856A /* OnboardingView.swift */; };
+		B1AC05002AA60B9400C3133A /* ThirdCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC04FF2AA60B9400C3133A /* ThirdCoordinatorTests.swift */; };
+		B1AC05032AA60DDA00C3133A /* MockOnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC05022AA60DDA00C3133A /* MockOnboardingCoordinator.swift */; };
 		B1BE98A72A9D89B2002D1D79 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE98A62A9D89B2002D1D79 /* FourthView.swift */; };
 		B1BE98AC2A9D8B2A002D1D79 /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE98AB2A9D8B2A002D1D79 /* FifthView.swift */; };
 		B1C6540A2A1EB8DB00B6E66D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C654092A1EB8DB00B6E66D /* ProductDetailView.swift */; };
@@ -76,6 +78,8 @@
 		B18555302A285649003FC475 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		B18555322A2856F4003FC475 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
 		B1A55C722A2A91F10067856A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B1AC04FF2AA60B9400C3133A /* ThirdCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinatorTests.swift; sourceTree = "<group>"; };
+		B1AC05022AA60DDA00C3133A /* MockOnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOnboardingCoordinator.swift; sourceTree = "<group>"; };
 		B1BE98A62A9D89B2002D1D79 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
 		B1BE98AB2A9D8B2A002D1D79 /* FifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthView.swift; sourceTree = "<group>"; };
 		B1C654092A1EB8DB00B6E66D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 		B12CC6292A19ADA500FBD153 /* ProductsCleanTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1AC04FD2AA60B7000C3133A /* ApplicationTests */,
 				B1FC02002A1AF9AA00893C4B /* ProductsTests */,
 			);
 			path = ProductsCleanTests;
@@ -233,6 +238,31 @@
 				B1A55C722A2A91F10067856A /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B1AC04FD2AA60B7000C3133A /* ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC04FE2AA60B7B00C3133A /* Coordinators */,
+			);
+			path = ApplicationTests;
+			sourceTree = "<group>";
+		};
+		B1AC04FE2AA60B7B00C3133A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC05012AA60CA000C3133A /* Mocks */,
+				B1AC04FF2AA60B9400C3133A /* ThirdCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B1AC05012AA60CA000C3133A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC05022AA60DDA00C3133A /* MockOnboardingCoordinator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B1BE98A52A9D8932002D1D79 /* FourthView */ = {
@@ -473,6 +503,8 @@
 			files = (
 				B1FC02022A1AF9CB00893C4B /* ProductsViewModelTests.swift in Sources */,
 				B1FC02052A1AFA4700893C4B /* FetchProductsUseCaseMock.swift in Sources */,
+				B1AC05002AA60B9400C3133A /* ThirdCoordinatorTests.swift in Sources */,
+				B1AC05032AA60DDA00C3133A /* MockOnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
