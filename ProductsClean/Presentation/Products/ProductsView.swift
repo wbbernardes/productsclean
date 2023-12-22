@@ -35,7 +35,5 @@ struct ProductsView: View {
                 await viewModel.fetchProducts()
             }
         }
-         
-        
     }
 }
